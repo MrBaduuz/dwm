@@ -38,6 +38,8 @@ static const Rule rules[] = {
 	{ "Pavucontrol",  NULL,   NULL,       1 << 5,       0,           -1 },
 	{ "Alacritty",  NULL,     "Spotify",       1 << 2,       0,           -1 },
 	{ "Alacritty",  NULL,     "Calendar",       1 << 3,       0,           -1 },
+	{ "Alacritty",  NULL,     "Calculator",       0,       1,           -1 },
+	{ "Alacritty",  NULL,     "Scratchpad",       0,       1,           -1 },
 };
 
 /* layout(s) */

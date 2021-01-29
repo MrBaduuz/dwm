@@ -1257,7 +1257,11 @@ manage(Window w, XWindowAttributes *wa)
 	if (!c->isfloating)
 		c->isfloating = c->oldstate = trans != None || c->isfixed;
 	if (c->isfloating)
-		XRaiseWindow(dpy, c->win);
+    {
+        c->x = c->mon->wx + (c->mon->ww / 2 - WIDTH(c) / 2);
+        c->y = c->mon->wy + (c->mon->wh / 2 - HEIGHT(c) / 2);
+        XRaiseWindow(dpy, c->win);
+    }
 	attach(c);
 	attachstack(c);
 	XChangeProperty(dpy, root, netatom[NetClientList], XA_WINDOW, 32, PropModeAppend,
