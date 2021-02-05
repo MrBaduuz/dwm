@@ -1,6 +1,6 @@
-#My build of dwm
+# My build of dwm
 
-##Patches
+## Patches
 
 - Awesome WM like status bar
 - Clickable status bar (with my or luke smith's build of dwmblocks)
@@ -8,7 +8,7 @@
 - Multiple new layouts and gaps (with vanitygaps patch)
 - Emoji support in status bar
 
-##Installation guide
+## Installation guide
 
 ```
 git clone https://github.com/MrBaduuz/dwm.git
@@ -16,7 +16,7 @@ cd dwm
 sudo make install
 ```
 
-###Requirements
+### Requirements
 
 - libxft-bgra (for the emojis)
 - Fonts: NotoColorEmoji, Source Sans Pro, Symbols Nerd Fonts (Feel free to replace those)
