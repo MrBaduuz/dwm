@@ -30,7 +30,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "阮", "漣", "", "6", "7", "8", "" };
+static const char *tags[] = { "", "", "阮", "漣", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -152,12 +152,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+	TAGKEYS(                        XK_7,                      3)
+	TAGKEYS(                        XK_8,                      4)
+	TAGKEYS(                        XK_9,                      5)
 	{ MODKEY|ShiftMask,             XK_e,      quit,           {0} },
 };
 
@@ -169,9 +166,9 @@ static Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button1,        togglewin,      {0} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
-	{ ClkStatusText,        0,              Button1,        sigdwmblocks,   {.i = 1} },
-	{ ClkStatusText,        0,              Button2,        sigdwmblocks,   {.i = 2} },
-	{ ClkStatusText,        0,              Button3,        sigdwmblocks,   {.i = 3} },
+//	{ ClkStatusText,        0,              Button1,        sigdwmblocks,   {.i = 1} },
+//	{ ClkStatusText,        0,              Button2,        sigdwmblocks,   {.i = 2} },
+//	{ ClkStatusText,        0,              Button3,        sigdwmblocks,   {.i = 3} },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
