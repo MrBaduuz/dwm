@@ -2,9 +2,9 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int snap      = 5;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
-static const unsigned int systrayspacing = 2;   /* systray spacing */
+static const unsigned int systrayspacing = 5;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;     /* 0 means no systray */
 static const unsigned int gappih    = 4;       /* horiz inner gap between windows */
@@ -39,11 +39,12 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",       NULL,       NULL,           0,            1,           -1 },
+	{ "Pcmanfm",    NULL,       NULL,           1 << 3,       1,           -1 },
+	{ "Pavucontrol",NULL,       NULL,           1 << 3,       1,           -1 },
 	{ "Alacritty",  NULL,       "Spotify",      1 << 2,       0,           -1 },
 	{ "Alacritty",  NULL,       "Calendar",     1 << 3,       0,           -1 },
 	{ "Alacritty",  NULL,       "Calculator",   0,            1,           -1 },
 	{ "Alacritty",  NULL,       "Scratchpad",   0,            1,           -1 },
-	{ "Alacritty",  NULL,       "Volume Control",0,           1,           -1 },
 };
 
 /* layout(s) */
